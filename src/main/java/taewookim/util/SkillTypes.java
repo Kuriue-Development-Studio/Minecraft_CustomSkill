@@ -1,6 +1,5 @@
 package taewookim.util;
 
-import taewookim.elements.Element;
 import taewookim.skills.Skill;
 
 public enum SkillTypes {
@@ -13,9 +12,9 @@ public enum SkillTypes {
         this.clz = clz;
     }
 
-    public Skill create(SkillOwner owner, Element element, int power) {
+    public Skill create(SkillOwner owner, ElementTypes element, int power) {
         try{
-            return clz.getDeclaredConstructor(SkillOwner.class, Element.class, int.class).newInstance(owner, element, power);
+            return clz.getDeclaredConstructor(SkillOwner.class, ElementTypes.class, int.class).newInstance(owner, element, power);
         }catch(Exception e) {
             return null;
         }

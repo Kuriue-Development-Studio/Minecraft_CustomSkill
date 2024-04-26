@@ -55,6 +55,22 @@ public class SkillOwner {
         this.dz = dz*deltasize;
     }
 
+    @Override
+    public SkillOwner clone() {
+        SkillOwner skillowner = new SkillOwner();
+        skillowner.owner = this.owner;
+        skillowner.x = this.x;
+        skillowner.y = this.y;
+        skillowner.z = this.z;
+        skillowner.dx = this.dx;
+        skillowner.dy = this.dy;
+        skillowner.dz = this.dz;
+        skillowner.isowner = this.isowner;
+        skillowner.islocation = this.islocation;
+        skillowner.isvector = this.isvector;
+        return skillowner;
+    }
+
     public double[] getDiraction() {
         if(isvector) {
             return new double[]{dx, dy, dz};

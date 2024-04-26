@@ -2,26 +2,30 @@ package taewookim.skills;
 
 import org.bukkit.entity.LivingEntity;
 import taewookim.CustomSkillPlugin;
-import taewookim.elements.Element;
+import taewookim.util.ElementTypes;
 import taewookim.util.SkillOwner;
 
 public abstract class Skill {
 
-    protected final SkillOwner owner;
+    protected SkillOwner owner;
     private int tick = 0;
     private boolean isend = false;
     private Skill nextskill;
-    private final Element element;
+    private final ElementTypes element;
     private final int power;
 
-    public Skill(SkillOwner owner, Element element, int power) {
+    public Skill(SkillOwner owner, ElementTypes element, int power) {
         this.element = element;
         this.power = power;
         this.owner = owner;
         init(element, power);
     }
 
-    protected abstract void init(Element element, int power);
+    public void replaceSkillOwner() {
+        owner=owner.clone();
+    }
+
+    protected abstract void init(ElementTypes element, int power);
 
     protected abstract void update();
 
@@ -32,6 +36,16 @@ public abstract class Skill {
     public boolean isEnd() {
         return isend;
     }
+
+    /*@Override
+    public Skill clone() {
+        try{
+            Skill skill = this.getClass().getDeclaredConstructor(SkillOwner.class, ElementTypes.class, int.class).newInstance(owner, element, power);
+
+            return skill;
+        }catch(Exception e) {
+        }
+    }*/
 
     public final void gu() {
         tick--;
