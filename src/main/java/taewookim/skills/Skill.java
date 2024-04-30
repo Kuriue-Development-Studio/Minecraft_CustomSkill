@@ -8,7 +8,7 @@ import taewookim.util.SkillOwner;
 public abstract class Skill {
 
     protected SkillOwner owner;
-    private int tick = 0;
+    protected int tick = 0;
     private boolean isend = false;
     private Skill nextskill;
     private final ElementTypes element;
@@ -18,6 +18,10 @@ public abstract class Skill {
         this.element = element;
         this.power = power;
         this.owner = owner;
+        if(!owner.isLocation()) {
+            isend = true;
+            return;
+        }
         init(element, power);
     }
 
@@ -37,18 +41,21 @@ public abstract class Skill {
         return isend;
     }
 
-    /*@Override
+    @Override
     public Skill clone() {
         try{
             Skill skill = this.getClass().getDeclaredConstructor(SkillOwner.class, ElementTypes.class, int.class).newInstance(owner, element, power);
-
             return skill;
         }catch(Exception e) {
+            return null;
         }
-    }*/
+    }
 
     public final void gu() {
         tick--;
+        if(isend) {
+            return;
+        }
         if(tick<1) {
             isend = true;
             CustomSkillPlugin.plugin.addSkill(nextskill);
