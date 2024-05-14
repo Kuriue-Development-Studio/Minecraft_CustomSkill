@@ -16,9 +16,9 @@ public class SkillPain extends Skill {
     protected void init(ElementTypes element, int power) {
         if(owner.isOwner()&&owner.getOwner() instanceof LivingEntity le) {
             if(owner.isTarget()) {
-                owner.getTarget().damage(BattleSystemPlugin.getDamage(le)*((double)power)*0.2D, le);
+                BattleSystemPlugin.Damage(le, owner.getTarget(), BattleSystemPlugin.getDamage(le)*((double)power)*0.2D);
             }else {
-                le.damage(BattleSystemPlugin.getDamage(le)*((double)power)*0.2D, le);
+                BattleSystemPlugin.Damage(le, le, BattleSystemPlugin.getDamage(le)*((double)power)*0.2D);
             }
         }
     }
