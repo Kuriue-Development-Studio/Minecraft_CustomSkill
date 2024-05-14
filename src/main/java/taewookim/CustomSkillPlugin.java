@@ -1,7 +1,9 @@
 package taewookim;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
+import taewookim.commands.SkillMakerCommand;
 import taewookim.skills.Skill;
 
 import java.util.ArrayList;
@@ -45,6 +47,9 @@ public class CustomSkillPlugin extends JavaPlugin {
     public void onEnable() {
         plugin = this;
         startUpdate();
+        SkillMakerCommand cmd = new SkillMakerCommand();
+        Bukkit.getPluginCommand("skillmaker").setExecutor(cmd);
+        Bukkit.getPluginCommand("skillmaker").setTabCompleter(cmd);
     }
 
 }

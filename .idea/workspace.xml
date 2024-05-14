@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="SkillTypes에 SKILL_PAIN 추가">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" afterDir="false" />
-    </list>
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="SkillOwner 최적화" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,21 +66,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Minecraft_CustomSkill [build].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Minecraft_CustomSkill [build].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Minecraft_CustomSkill [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -138,7 +133,7 @@
       <workItem from="1714465733891" duration="1118000" />
       <workItem from="1714626356276" duration="601000" />
       <workItem from="1715163771317" duration="9000" />
-      <workItem from="1715670924560" duration="4694000" />
+      <workItem from="1715670924560" duration="4764000" />
     </task>
     <task id="LOCAL-00001" summary="생성">
       <option name="closed" value="true" />
@@ -196,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715674851928</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SkillOwner 최적화">
+      <option name="closed" value="true" />
+      <created>1715675628102</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715675628102</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +213,7 @@
     <MESSAGE value="op권한을 가진 플레이어가 명령어로 스킬을 생성할 수 있습니다." />
     <MESSAGE value="SkillPain, SkillTarget 추가" />
     <MESSAGE value="SkillTypes에 SKILL_PAIN 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="SkillTypes에 SKILL_PAIN 추가" />
+    <MESSAGE value="SkillOwner 최적화" />
+    <option name="LAST_COMMIT_MESSAGE" value="SkillOwner 최적화" />
   </component>
 </project>
