@@ -1,6 +1,7 @@
 package taewookim.util;
 
 import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.util.Vector;
@@ -9,12 +10,14 @@ public class SkillOwner {
 
     private LivingEntity target;
     private Entity owner;
+    private World world;
     private double x;
     private double y;
     private double z;
     private double dx;
     private double dy;
     private double dz;
+    private boolean isworld = false;
     private boolean istarget = false;
     private boolean isowner = false;
     private boolean islocation = false;
@@ -58,6 +61,23 @@ public class SkillOwner {
 
     public Entity getOwner() {
         return owner;
+    }
+
+    public void setWorld(World w) {
+        this.world = w;
+        isworld = true;
+    }
+
+    public void resetWorld() {
+        isworld = false;
+    }
+
+    public boolean isWorld() {
+        return isworld;
+    }
+
+    public World getWorld() {
+        return world;
     }
 
     public void setLocation(double x, double y, double z) {

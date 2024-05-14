@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="세이브">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillBuilder.java" afterDir="false" />
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="op권한을 가진 플레이어가 명령어로 스킬을 생성할 수 있습니다.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillPain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
       <workItem from="1714465733891" duration="1118000" />
       <workItem from="1714626356276" duration="601000" />
       <workItem from="1715163771317" duration="9000" />
-      <workItem from="1715670924560" duration="620000" />
+      <workItem from="1715670924560" duration="3855000" />
     </task>
     <task id="LOCAL-00001" summary="생성">
       <option name="closed" value="true" />
@@ -103,7 +103,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714466835119</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SkillBuilder 추가">
+      <option name="closed" value="true" />
+      <created>1715671556223</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715671556223</updated>
+    </task>
+    <task id="LOCAL-00005" summary="op권한을 가진 플레이어가 명령어로 스킬을 생성할 수 있습니다.">
+      <option name="closed" value="true" />
+      <created>1715673666846</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715673666846</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +129,8 @@
     <MESSAGE value="생성" />
     <MESSAGE value="기초적인것" />
     <MESSAGE value="세이브" />
-    <option name="LAST_COMMIT_MESSAGE" value="세이브" />
+    <MESSAGE value="SkillBuilder 추가" />
+    <MESSAGE value="op권한을 가진 플레이어가 명령어로 스킬을 생성할 수 있습니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="op권한을 가진 플레이어가 명령어로 스킬을 생성할 수 있습니다." />
   </component>
 </project>
