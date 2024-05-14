@@ -10,14 +10,8 @@ public class SkillOwner {
 
     private LivingEntity target;
     private Entity owner;
-    private World world;
-    private double x;
-    private double y;
-    private double z;
-    private double dx;
-    private double dy;
-    private double dz;
-    private boolean isworld = false;
+    private Location loc;
+    private Vector direction;
     private boolean istarget = false;
     private boolean isowner = false;
     private boolean islocation = false;
@@ -63,27 +57,8 @@ public class SkillOwner {
         return owner;
     }
 
-    public void setWorld(World w) {
-        this.world = w;
-        isworld = true;
-    }
-
-    public void resetWorld() {
-        isworld = false;
-    }
-
-    public boolean isWorld() {
-        return isworld;
-    }
-
-    public World getWorld() {
-        return world;
-    }
-
-    public void setLocation(double x, double y, double z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+    public void setLocation(Location loc) {
+        this.loc = loc;
         islocation = true;
     }
 
@@ -95,59 +70,44 @@ public class SkillOwner {
         return islocation||isowner||istarget;
     }
 
-    public double[] getLocation() {
+    public Location getLocation() {
         if(islocation) {
-            return new double[]{x, y, z};
+            return loc;
         }else if(isowner) {
-            Location loc = owner.getLocation();
-            return new double[]{loc.getX(), loc.getY(), loc.getZ()};
+            return owner.getLocation();
         }else if(istarget) {
-            Location loc = target.getLocation();
-            return new double[]{loc.getX(), loc.getY(), loc.getZ()};
+            return target.getLocation();
         }
         return null;
     }
 
-    public void setDirection(double dx, double dy, double dz) {
-        double deltasize = 1D/(Math.sqrt(dx*dx+dy*dy+dz*dz));
-        this.dx = dx*deltasize;
-        this.dy = dy*deltasize;
-        this.dz = dz*deltasize;
+    public void setDirection(Vector direction) {
+        this.direction = direction;
         isvector = true;
     }
 
     public void resetDirection() {
-        Vector v = Vector.getRandom();
-        this.dx = v.getX();
-        this.dy = v.getY();
-        this.dz = v.getZ();
+        direction = Vector.getRandom();
         isvector = true;
     }
 
-    public double[] getDiraction() {
+    public Vector getDiraction() {
         if(isvector) {
-            return new double[]{dx, dy, dz};
+            return direction;
         }else if(isowner) {
-            Vector v = owner.getLocation().getDirection();
-            return new double[]{v.getX(), v.getY(), v.getZ()};
+            return owner.getLocation().getDirection();
         }else if(istarget) {
-            Vector v = target.getLocation().getDirection();
-            return new double[]{v.getX(), v.getY(), v.getZ()};
+            return target.getLocation().getDirection();
         }
-        Vector v = Vector.getRandom();
-        return new double[]{v.getX(), v.getY(), v.getZ()};
+        return Vector.getRandom();
     }
 
     @Override
     public SkillOwner clone() {
         SkillOwner skillowner = new SkillOwner();
         skillowner.owner = this.owner;
-        skillowner.x = this.x;
-        skillowner.y = this.y;
-        skillowner.z = this.z;
-        skillowner.dx = this.dx;
-        skillowner.dy = this.dy;
-        skillowner.dz = this.dz;
+        skillowner.loc = this.loc.clone();
+        skillowner.direction = this.direction.clone();
         skillowner.isowner = this.isowner;
         skillowner.islocation = this.islocation;
         skillowner.isvector = this.isvector;

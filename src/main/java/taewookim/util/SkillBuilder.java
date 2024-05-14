@@ -53,7 +53,7 @@ public class SkillBuilder {
 
     public void build(Location loc) {
         SkillOwner owner = new SkillOwner();
-        owner.setLocation(loc.getX(), loc.getY(), loc.getZ());
+        owner.setLocation(loc);
         build(owner);
     }
 

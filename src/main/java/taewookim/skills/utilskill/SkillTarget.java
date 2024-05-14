@@ -2,10 +2,14 @@ package taewookim.skills.utilskill;
 
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.util.Vector;
 import taewookim.skills.Skill;
 import taewookim.util.ElementTypes;
 import taewookim.util.SkillOwner;
+
+import java.util.function.Predicate;
 
 public class SkillTarget extends Skill {
 
@@ -15,10 +19,13 @@ public class SkillTarget extends Skill {
 
     @Override
     protected void init(ElementTypes element, int power) {
-        World w = owner.getWorld();
-        double[] location = owner.getLocation();
-        double[] direction = owner.getDiraction();
-        w.rayTraceEntities(new Location(w, location[0], location[1], location[2]), new Vector(direction[0], direction[1], direction[2]), power*7);
+        Location loc = owner.getLocation();
+        owner.setTarget((LivingEntity) loc.getWorld().rayTraceEntities(loc, loc.getDirection(), power * 7, new Predicate<Entity>() {
+            @Override
+            public boolean test(Entity entity) {
+                return entity instanceof LivingEntity;
+            }
+        }).getHitEntity());
     }
 
     @Override
