@@ -4,6 +4,7 @@ import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
+import org.bukkit.util.RayTraceResult;
 import org.bukkit.util.Vector;
 import taewookim.skills.Skill;
 import taewookim.util.ElementTypes;
@@ -20,12 +21,15 @@ public class SkillTarget extends Skill {
     @Override
     protected void init(ElementTypes element, int power) {
         Location loc = owner.getLocation();
-        owner.setTarget((LivingEntity) loc.getWorld().rayTraceEntities(loc, loc.getDirection(), power * 7, new Predicate<Entity>() {
+        RayTraceResult result = loc.getWorld().rayTraceEntities(loc, loc.getDirection(), power * 7, new Predicate<Entity>() {
             @Override
             public boolean test(Entity entity) {
-                return entity instanceof LivingEntity;
+                return !entity.equals(owner.getOwner())&&entity instanceof LivingEntity;
             }
-        }).getHitEntity());
+        });
+        if(result!=null&&result.getHitEntity() instanceof LivingEntity le) {
+            owner.setTarget(le);
+        }
     }
 
     @Override

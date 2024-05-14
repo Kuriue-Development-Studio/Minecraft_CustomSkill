@@ -25,6 +25,7 @@ public enum SkillTypes {
         try{
             return clz.getDeclaredConstructor(SkillOwner.class, ElementTypes.class, int.class).newInstance(owner, element, power);
         }catch(Exception e) {
+            e.printStackTrace();
             return null;
         }
     }

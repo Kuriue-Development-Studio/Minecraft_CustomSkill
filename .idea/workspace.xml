@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="SkillJump, SkillTargetMe 추가">
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="대미지 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +140,8 @@
       <workItem from="1714626356276" duration="601000" />
       <workItem from="1715163771317" duration="9000" />
       <workItem from="1715670924560" duration="4764000" />
-      <workItem from="1715675890045" duration="3107000" />
+      <workItem from="1715675890045" duration="4835000" />
+      <workItem from="1715683459276" duration="1482000" />
     </task>
     <task id="LOCAL-00001" summary="생성">
       <option name="closed" value="true" />
@@ -219,7 +223,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715677863405</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="nextskill이 없으면 발동되지 않습니다.">
+      <option name="closed" value="true" />
+      <created>1715681159666</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715681159666</updated>
+    </task>
+    <task id="LOCAL-00012" summary="대미지 수정">
+      <option name="closed" value="true" />
+      <created>1715682702303</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715682702303</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +256,8 @@
     <MESSAGE value="SkillOwner 최적화" />
     <MESSAGE value="커맨드 버그 수정" />
     <MESSAGE value="SkillJump, SkillTargetMe 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="SkillJump, SkillTargetMe 추가" />
+    <MESSAGE value="nextskill이 없으면 발동되지 않습니다." />
+    <MESSAGE value="대미지 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="대미지 수정" />
   </component>
 </project>

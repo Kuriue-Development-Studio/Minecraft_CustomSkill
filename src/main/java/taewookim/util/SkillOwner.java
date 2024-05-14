@@ -11,11 +11,9 @@ public class SkillOwner {
     private LivingEntity target;
     private Entity owner;
     private Location loc;
-    private Vector direction;
     private boolean istarget = false;
     private boolean isowner = false;
     private boolean islocation = false;
-    private boolean isvector = false;
 
     public SkillOwner() {
 
@@ -74,32 +72,19 @@ public class SkillOwner {
         if(islocation) {
             return loc;
         }else if(isowner) {
-            return owner.getLocation();
+            return owner.getLocation().add(0, 1.75, 0);
         }else if(istarget) {
-            return target.getLocation();
+            return target.getLocation().add(0, 1.75, 0);
         }
         return null;
     }
 
     public void setDirection(Vector direction) {
-        this.direction = direction;
-        isvector = true;
+        loc.setDirection(direction);
     }
 
     public void resetDirection() {
-        direction = Vector.getRandom();
-        isvector = true;
-    }
-
-    public Vector getDiraction() {
-        if(isvector) {
-            return direction;
-        }else if(isowner) {
-            return owner.getLocation().getDirection();
-        }else if(istarget) {
-            return target.getLocation().getDirection();
-        }
-        return Vector.getRandom();
+        loc.setDirection(Vector.getRandom());
     }
 
     @Override
@@ -107,10 +92,8 @@ public class SkillOwner {
         SkillOwner skillowner = new SkillOwner();
         skillowner.owner = this.owner;
         skillowner.loc = this.loc.clone();
-        skillowner.direction = this.direction.clone();
         skillowner.isowner = this.isowner;
         skillowner.islocation = this.islocation;
-        skillowner.isvector = this.isvector;
         return skillowner;
     }
 }

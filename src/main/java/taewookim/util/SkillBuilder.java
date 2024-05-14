@@ -36,11 +36,16 @@ public class SkillBuilder {
             return;
         }
         Skill firstskill = skills.get(0).create(owner, elements.get(0), powers.get(0));
+        if(firstskill==null) {
+            return;
+        }
         Skill lastskill = firstskill;
         for(int i = 1; i<skills.size(); i++) {
             Skill newskill = skills.get(i).create(owner, elements.get(i), powers.get(i));
-            lastskill.setNextSkill(newskill);
-            lastskill = newskill;
+            if(newskill!=null) {
+                lastskill.setNextSkill(newskill);
+                lastskill = newskill;
+            }
         }
         CustomSkillPlugin.plugin.addSkill(firstskill);
     }
