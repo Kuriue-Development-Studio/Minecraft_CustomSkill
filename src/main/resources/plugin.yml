@@ -5,3 +5,15 @@ main: taewookim.CustomSkillPlugin
 
 depend:
   - BattleSystem
+
+permissions:
+  skilluser.admin:
+    default: op
+    children:
+      - skilluser.user
+  skilluser.user:
+    default: true
+
+commands:
+  skillmaker:
+    permission: skilluser.admin
