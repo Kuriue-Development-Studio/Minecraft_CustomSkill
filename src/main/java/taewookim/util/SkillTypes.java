@@ -1,14 +1,17 @@
 package taewookim.util;
 
 import taewookim.skills.Skill;
+import taewookim.skills.utilskill.SkillTarget;
 
 public enum SkillTypes {
 
-    SKILL(Skill.class);
+    SKILL(Skill.class),
+    SKILLTARGET(SkillTarget.class),
+    ;
 
     private final Class<? extends Skill> clz;
 
-    SkillTypes(Class<Skill> clz) {
+    SkillTypes(Class<? extends Skill> clz) {
         this.clz = clz;
     }
 

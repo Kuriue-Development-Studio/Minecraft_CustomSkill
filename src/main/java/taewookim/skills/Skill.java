@@ -45,6 +45,7 @@ public abstract class Skill {
     public Skill clone() {
         try{
             Skill skill = this.getClass().getDeclaredConstructor(SkillOwner.class, ElementTypes.class, int.class).newInstance(owner, element, power);
+            skill.setNextSkill(nextskill.clone());
             return skill;
         }catch(Exception e) {
             return null;
