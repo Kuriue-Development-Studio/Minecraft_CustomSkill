@@ -59,7 +59,9 @@ public abstract class Skill {
         }
         if(tick<1) {
             isend = true;
-            CustomSkillPlugin.plugin.addSkill(nextskill);
+            if(nextskill!=null) {
+                CustomSkillPlugin.plugin.addSkill(nextskill);
+            }
             return;
         }
         update();

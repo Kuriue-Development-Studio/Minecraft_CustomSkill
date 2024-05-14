@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="SkillOwner 최적화" />
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="SkillJump, SkillTargetMe 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,6 +137,7 @@
       <workItem from="1714626356276" duration="601000" />
       <workItem from="1715163771317" duration="9000" />
       <workItem from="1715670924560" duration="4764000" />
+      <workItem from="1715675890045" duration="3107000" />
     </task>
     <task id="LOCAL-00001" summary="생성">
       <option name="closed" value="true" />
@@ -199,7 +203,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715675628102</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="커맨드 버그 수정">
+      <option name="closed" value="true" />
+      <created>1715675973266</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715675973266</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SkillJump, SkillTargetMe 추가">
+      <option name="closed" value="true" />
+      <created>1715677863405</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715677863405</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +234,8 @@
     <MESSAGE value="SkillPain, SkillTarget 추가" />
     <MESSAGE value="SkillTypes에 SKILL_PAIN 추가" />
     <MESSAGE value="SkillOwner 최적화" />
-    <option name="LAST_COMMIT_MESSAGE" value="SkillOwner 최적화" />
+    <MESSAGE value="커맨드 버그 수정" />
+    <MESSAGE value="SkillJump, SkillTargetMe 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="SkillJump, SkillTargetMe 추가" />
   </component>
 </project>
