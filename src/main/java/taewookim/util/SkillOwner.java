@@ -80,6 +80,9 @@ public class SkillOwner {
     }
 
     public void setDirection(Vector direction) {
+        if(!islocation) {
+            setLocation(getLocation());
+        }
         loc.setDirection(direction);
     }
 
