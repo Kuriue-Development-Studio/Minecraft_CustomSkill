@@ -32,7 +32,7 @@ public class SkillTarget extends Skill {
         if(result!=null&&result.getHitEntity() instanceof LivingEntity le) {
             owner.setTarget(le);
         }else if(owner.getOwner() instanceof Player p) {
-            p.getTargetBlock(null, lengh);
+            owner.setLocation(p.getTargetBlock(null, lengh).getLocation(););
         }
     }
 
