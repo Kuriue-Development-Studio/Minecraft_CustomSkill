@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="ELEMENT_FIRE 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillLazer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillUP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="버그패치">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/moveskill/SkillJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/moveskill/SkillJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillLazer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillLazer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715758474777</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="SKILL_LAZER, SKILL_UP 추가">
+      <created>1715760333314</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715760333314</updated>
+    </task>
+    <task id="LOCAL-00015" summary="버그패치">
+      <created>1715760653055</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715760653055</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +277,8 @@
     <MESSAGE value="nextskill이 없으면 발동되지 않습니다." />
     <MESSAGE value="대미지 수정" />
     <MESSAGE value="ELEMENT_FIRE 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="ELEMENT_FIRE 추가" />
+    <MESSAGE value="SKILL_LAZER, SKILL_UP 추가" />
+    <MESSAGE value="버그패치" />
+    <option name="LAST_COMMIT_MESSAGE" value="버그패치" />
   </component>
 </project>
