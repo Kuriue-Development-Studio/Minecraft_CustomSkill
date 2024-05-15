@@ -9,11 +9,18 @@ public enum ElementTypes {
 
     ELEMENT(Particle.CLOUD, Particle.SMOKE_LARGE, new ElementDamager() {
         @Override
-        public void entityDamage(LivingEntity damager, LivingEntity target) {
-            BattleSystemPlugin.Damage(damager, target, BattleSystemPlugin.getDamage(damager));
+        public void entityDamage(LivingEntity damager, LivingEntity target, int power) {
+            BattleSystemPlugin.Damage(damager, target, BattleSystemPlugin.getDamage(damager)*((double)power)*0.2d);
         }
-    });
-
+    }),
+    ELEMENT_FIRE(Particle.FLAME, Particle.LAVA, new ElementDamager() {
+        @Override
+        public void entityDamage(LivingEntity damager, LivingEntity target, int power) {
+            BattleSystemPlugin.Damage(damager, target, BattleSystemPlugin.getDamage(damager)*((double)power)*0.17d);
+            target.setFireTicks(power*20);
+        }
+    }),
+    ;
 
     private final Particle main;
     private final Particle sub;
@@ -25,8 +32,8 @@ public enum ElementTypes {
         this.elementdamager = elementdamager;
     }
 
-    public void damage(LivingEntity damager, LivingEntity target) {
-        elementdamager.entityDamage(damager, target);
+    public void damage(LivingEntity damager, LivingEntity target, int power) {
+        elementdamager.entityDamage(damager, target, power);
     }
 
 }
