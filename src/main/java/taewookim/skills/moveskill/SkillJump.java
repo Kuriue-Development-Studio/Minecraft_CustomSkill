@@ -12,7 +12,7 @@ public class SkillJump extends Skill {
 
     @Override
     protected void init(ElementTypes element, int power) {
-        Vector v = new Vector(0, ((double)power)*0.5d, 0);
+        Vector v = new Vector(0, ((double)power)*0.3d, 0);
         if(owner.isTarget()) {
             owner.getTarget().setVelocity(v);
         }else if(owner.isOwner()) {

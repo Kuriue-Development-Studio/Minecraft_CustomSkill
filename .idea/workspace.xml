@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="대미지 수정">
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="ELEMENT_FIRE 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillLazer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillUP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/moveskill/SkillJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/moveskill/SkillJump.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" afterDir="false" />
     </list>
@@ -107,7 +110,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -239,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715682702303</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ELEMENT_FIRE 추가">
+      <created>1715758474777</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715758474777</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +268,7 @@
     <MESSAGE value="SkillJump, SkillTargetMe 추가" />
     <MESSAGE value="nextskill이 없으면 발동되지 않습니다." />
     <MESSAGE value="대미지 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="대미지 수정" />
+    <MESSAGE value="ELEMENT_FIRE 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="ELEMENT_FIRE 추가" />
   </component>
 </project>

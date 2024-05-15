@@ -43,6 +43,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     compileOnly 'org.spigotmc:spigot-api:1.20.2-R0.1-SNAPSHOT'
     implementation 'taewookim:Minecraft_BattleSystem:release@jar'
+    implementation 'taewookim:Minecraft_HitboxUtile:release@jar'
 }
 
 test {

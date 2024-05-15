@@ -1,10 +1,12 @@
 package taewookim.util;
 
 import taewookim.skills.Skill;
+import taewookim.skills.attackskill.SkillLazer;
 import taewookim.skills.attackskill.SkillPain;
 import taewookim.skills.moveskill.SkillJump;
 import taewookim.skills.utilskill.SkillTarget;
 import taewookim.skills.utilskill.SkillTargetMe;
+import taewookim.skills.utilskill.SkillUP;
 
 public enum SkillTypes {
 
@@ -13,6 +15,8 @@ public enum SkillTypes {
     SKILL_PAIN(SkillPain.class),
     SKILL_TARGET_ME(SkillTargetMe.class),
     SKILL_JUMP(SkillJump.class),
+    SKILL_LAZER(SkillLazer.class),
+    SKILL_UP(SkillUP.class),
     ;
 
     private final Class<? extends Skill> clz;
