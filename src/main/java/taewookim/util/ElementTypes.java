@@ -32,6 +32,14 @@ public enum ElementTypes {
         this.elementdamager = elementdamager;
     }
 
+    public Particle getMainParticle() {
+        return main;
+    }
+
+    public Particle getSubParticle() {
+        return sub;
+    }
+
     public void damage(LivingEntity damager, LivingEntity target, int power) {
         elementdamager.entityDamage(damager, target, power);
     }

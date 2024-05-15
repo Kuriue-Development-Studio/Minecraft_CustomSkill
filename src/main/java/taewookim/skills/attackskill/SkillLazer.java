@@ -30,6 +30,7 @@ public class SkillLazer extends Skill {
             BoundingBox box = new BoundingBox(x-0.5, y-0.5, z-0.5, x+0.5, y+0.5, z+0.5);
             for(int i = 0; i<5*power; i++) {
                 box.shift(loc.add(v));
+                w.spawnParticle(element.getMainParticle(), loc, 5, .5, .5, .5, .1);
                 for(Entity en : w.getNearbyEntities(box, new Predicate<Entity>() {
                     @Override
                     public boolean test(Entity entity) {
