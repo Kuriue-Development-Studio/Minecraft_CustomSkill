@@ -9,10 +9,10 @@ public abstract class Skill {
 
     protected SkillOwner owner;
     protected int tick = 0;
+    protected final ElementTypes element;
+    protected final int power;
     private boolean isend = false;
     private Skill nextskill;
-    private final ElementTypes element;
-    private final int power;
 
     public Skill(SkillOwner owner, ElementTypes element, int power) {
         this.element = element;

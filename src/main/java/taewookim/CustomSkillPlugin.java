@@ -7,6 +7,7 @@ import taewookim.commands.SkillMakerCommand;
 import taewookim.skills.Skill;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class CustomSkillPlugin extends JavaPlugin {
 
@@ -14,6 +15,7 @@ public class CustomSkillPlugin extends JavaPlugin {
     private ArrayList<Skill> skills = new ArrayList<>();
     private ArrayList<Skill> adding = new ArrayList<>();
     private boolean isupdating = false;
+    public Random r = new Random();
 
     public void addSkill(Skill skill) {
         if(isupdating) {

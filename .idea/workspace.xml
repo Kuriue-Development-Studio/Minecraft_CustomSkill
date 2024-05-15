@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="SkillOwner가 Location을 관리하는 방식을 바꿉니다.">
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="패치">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillBall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillProjectile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillRandomDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillRandomPosition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/CustomSkillPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/CustomSkillPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715763041927</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="패치">
+      <created>1715763436268</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1715763436268</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +339,7 @@
     <MESSAGE value="수정..." />
     <MESSAGE value="...." />
     <MESSAGE value="SkillOwner가 Location을 관리하는 방식을 바꿉니다." />
-    <option name="LAST_COMMIT_MESSAGE" value="SkillOwner가 Location을 관리하는 방식을 바꿉니다." />
+    <MESSAGE value="패치" />
+    <option name="LAST_COMMIT_MESSAGE" value="패치" />
   </component>
 </project>
