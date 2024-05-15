@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="버그패치">
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="loc가 없으면 자동으로 새로 생성합니다.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillExplosion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillLazer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillLazer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +259,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715760653055</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="버그패치">
+      <created>1715761280261</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715761280261</updated>
+    </task>
+    <task id="LOCAL-00017" summary="loc가 없으면 자동으로 새로 생성합니다.">
+      <created>1715761745278</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715761745278</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +295,7 @@
     <MESSAGE value="ELEMENT_FIRE 추가" />
     <MESSAGE value="SKILL_LAZER, SKILL_UP 추가" />
     <MESSAGE value="버그패치" />
-    <option name="LAST_COMMIT_MESSAGE" value="버그패치" />
+    <MESSAGE value="loc가 없으면 자동으로 새로 생성합니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="loc가 없으면 자동으로 새로 생성합니다." />
   </component>
 </project>

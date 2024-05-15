@@ -4,6 +4,7 @@ import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Player;
 import org.bukkit.util.RayTraceResult;
 import org.bukkit.util.Vector;
 import taewookim.skills.Skill;
@@ -21,7 +22,8 @@ public class SkillTarget extends Skill {
     @Override
     protected void init(ElementTypes element, int power) {
         Location loc = owner.getLocation();
-        RayTraceResult result = loc.getWorld().rayTraceEntities(loc, loc.getDirection(), power * 7, new Predicate<Entity>() {
+        int lengh = power*7;
+        RayTraceResult result = loc.getWorld().rayTraceEntities(loc, loc.getDirection(), lengh, new Predicate<Entity>() {
             @Override
             public boolean test(Entity entity) {
                 return !entity.equals(owner.getOwner())&&entity instanceof LivingEntity;
@@ -29,6 +31,8 @@ public class SkillTarget extends Skill {
         });
         if(result!=null&&result.getHitEntity() instanceof LivingEntity le) {
             owner.setTarget(le);
+        }else if(owner.getOwner() instanceof Player p) {
+            p.getTargetBlock(null, lengh);
         }
     }
 
