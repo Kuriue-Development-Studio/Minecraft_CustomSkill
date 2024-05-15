@@ -73,9 +73,11 @@ public class SkillOwner {
             return loc;
         }else if(istarget) {
             loc = target.getLocation().add(0, 1.75, 0);
+            islocation = true;
             return loc;
         }else if(isowner) {
             loc = owner.getLocation().add(0, 1.75, 0);
+            islocation = true;
             return loc;
         }
         return null;
