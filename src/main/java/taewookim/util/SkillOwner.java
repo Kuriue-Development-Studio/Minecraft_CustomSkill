@@ -72,16 +72,21 @@ public class SkillOwner {
         if(islocation) {
             return loc;
         }else if(istarget) {
-            return target.getLocation().add(0, 1.75, 0);
+            loc = target.getLocation().add(0, 1.75, 0);
+            return loc;
         }else if(isowner) {
-            return owner.getLocation().add(0, 1.75, 0);
+            loc = owner.getLocation().add(0, 1.75, 0);
+            return loc;
         }
         return null;
     }
 
     public void setDirection(Vector direction) {
         if(!islocation) {
-            setLocation(getLocation());
+            getLocation();
+            if(!islocation) {
+                return;
+            }
         }
         loc.setDirection(direction);
     }
