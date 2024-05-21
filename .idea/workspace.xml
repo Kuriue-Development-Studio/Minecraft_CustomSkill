@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="패치">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillBall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillProjectile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillRandomDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/utilskill/SkillRandomPosition.java" afterDir="false" />
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="reSetDirection() 함수의 버그를 수정하였습니다.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/CustomSkillPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/CustomSkillPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +104,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -145,6 +139,7 @@
       <workItem from="1715670924560" duration="4764000" />
       <workItem from="1715675890045" duration="4835000" />
       <workItem from="1715683459276" duration="1482000" />
+      <workItem from="1716276816775" duration="733000" />
     </task>
     <task id="LOCAL-00001" summary="생성">
       <option name="closed" value="true" />
@@ -312,11 +307,30 @@
       <option name="project" value="LOCAL" />
       <updated>1715763436268</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="reSetDirection() 함수의 버그를 수정하였습니다.">
+      <option name="closed" value="true" />
+      <created>1716276932285</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716276932285</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="생성" />
@@ -340,6 +354,7 @@
     <MESSAGE value="...." />
     <MESSAGE value="SkillOwner가 Location을 관리하는 방식을 바꿉니다." />
     <MESSAGE value="패치" />
-    <option name="LAST_COMMIT_MESSAGE" value="패치" />
+    <MESSAGE value="reSetDirection() 함수의 버그를 수정하였습니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="reSetDirection() 함수의 버그를 수정하였습니다." />
   </component>
 </project>

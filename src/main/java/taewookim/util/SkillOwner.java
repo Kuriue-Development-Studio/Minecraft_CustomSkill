@@ -14,9 +14,18 @@ public class SkillOwner {
     private boolean istarget = false;
     private boolean isowner = false;
     private boolean islocation = false;
+    private boolean canclone = true;
 
     public SkillOwner() {
 
+    }
+
+    public boolean isCanClone() {
+        return canclone;
+    }
+
+    public void setDontClone() {
+        canclone = false;
     }
 
     public void setTarget(LivingEntity target) {
