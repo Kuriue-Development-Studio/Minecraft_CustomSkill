@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="reSetDirection() 함수의 버그를 수정하였습니다.">
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="SkillShotGun 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skillobjects/BallObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skillobjects/BallObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +139,7 @@
       <workItem from="1715670924560" duration="4764000" />
       <workItem from="1715675890045" duration="4835000" />
       <workItem from="1715683459276" duration="1482000" />
-      <workItem from="1716276816775" duration="733000" />
+      <workItem from="1716276816775" duration="2419000" />
     </task>
     <task id="LOCAL-00001" summary="생성">
       <option name="closed" value="true" />
@@ -315,7 +315,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716276932285</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="렉 방지 시스템 canclone 변수 추가">
+      <option name="closed" value="true" />
+      <created>1716277560092</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716277560092</updated>
+    </task>
+    <task id="LOCAL-00025" summary="SkillShotGun 추가">
+      <option name="closed" value="true" />
+      <created>1716278989783</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716278989783</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,6 +371,8 @@
     <MESSAGE value="SkillOwner가 Location을 관리하는 방식을 바꿉니다." />
     <MESSAGE value="패치" />
     <MESSAGE value="reSetDirection() 함수의 버그를 수정하였습니다." />
-    <option name="LAST_COMMIT_MESSAGE" value="reSetDirection() 함수의 버그를 수정하였습니다." />
+    <MESSAGE value="렉 방지 시스템 canclone 변수 추가" />
+    <MESSAGE value="SkillShotGun 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="SkillShotGun 추가" />
   </component>
 </project>

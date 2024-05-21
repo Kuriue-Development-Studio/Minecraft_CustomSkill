@@ -4,8 +4,9 @@ import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import taewookim.hitbox.HitBox;
+import taewookim.hitbox.type.AttackBox;
 
-public class BallObject extends HitBox {
+public class BallObject extends HitBox implements AttackBox {
     public BallObject(Location mainloc, LivingEntity owner) {
         super(mainloc, owner);
     }
@@ -23,5 +24,10 @@ public class BallObject extends HitBox {
     @Override
     protected void collisionHitBox(HitBox hitBox) {
 
+    }
+
+    @Override
+    public void update() {
+        super.update();
     }
 }
