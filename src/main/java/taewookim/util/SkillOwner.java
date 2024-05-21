@@ -94,7 +94,7 @@ public class SkillOwner {
     }
 
     public void resetDirection() {
-        loc.setDirection(Vector.getRandom());
+        setDirection(Vector.getRandom());
     }
 
     @Override
