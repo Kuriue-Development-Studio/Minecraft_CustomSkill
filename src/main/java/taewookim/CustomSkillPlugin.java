@@ -15,7 +15,7 @@ public class CustomSkillPlugin extends JavaPlugin {
     private ArrayList<Skill> skills = new ArrayList<>();
     private ArrayList<Skill> adding = new ArrayList<>();
     private boolean isupdating = false;
-    public Random r = new Random();
+    public static Random r = new Random();
 
     public void addSkill(Skill skill) {
         if(isupdating) {

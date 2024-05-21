@@ -41,6 +41,10 @@ public abstract class Skill {
         return isend;
     }
 
+    protected void seEnd() {
+        isend = true;
+    }
+
     @Override
     public Skill clone() {
         try{
@@ -50,6 +54,10 @@ public abstract class Skill {
         }catch(Exception e) {
             return null;
         }
+    }
+
+    public SkillOwner getOwner() {
+        return owner;
     }
 
     public final void gu() {

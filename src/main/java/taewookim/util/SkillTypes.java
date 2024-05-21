@@ -2,6 +2,7 @@ package taewookim.util;
 
 import taewookim.skills.Skill;
 import taewookim.skills.attackskill.*;
+import taewookim.skills.cloneskill.SkillShotGun;
 import taewookim.skills.moveskill.SkillJump;
 import taewookim.skills.utilskill.*;
 
@@ -19,6 +20,7 @@ public enum SkillTypes {
     SKILL_RANDOM_DIRECTION(SkillRandomDirection.class),
     SKILL_RANDOM_POSITION(SkillRandomPosition.class),
     SKILL_PROJECTILE(SkillProjectile.class),
+    SKILL_SHOTGUN(SkillShotGun.class),
     ;
 
     private final Class<? extends Skill> clz;
