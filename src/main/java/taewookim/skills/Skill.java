@@ -40,7 +40,7 @@ public abstract class Skill {
         return isend;
     }
 
-    protected void seEnd() {
+    protected void setEnd() {
         isend = true;
     }
 

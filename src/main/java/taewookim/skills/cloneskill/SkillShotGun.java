@@ -24,7 +24,7 @@ public class SkillShotGun extends Skill {
                 CustomSkillPlugin.plugin.addSkill(cloned);
             }
         }
-        super.seEnd();
+        tick = 0;
     }
 
     @Override
