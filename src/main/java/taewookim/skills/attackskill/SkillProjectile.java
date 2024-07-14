@@ -64,7 +64,7 @@ public class SkillProjectile extends Skill {
         time+=0.05;
         double vy = gravity*(time*time-lasttime*lasttime)+dy;
         loc.add(dx, vy, dz);
-        box.shift(dx, vy, dz);
+        box.shift(box.getCenterX()+dx, box.getCenterY()+vy, box.getCenterZ()+dz);
         w.spawnParticle(element.getMainParticle(), loc, power, d, d, d, 0.05);
         if(damage>0) {
             for(Entity en : w.getNearbyEntities(box, predict)) {

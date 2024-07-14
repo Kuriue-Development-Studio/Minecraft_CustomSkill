@@ -12,6 +12,7 @@ public abstract class Skill {
     protected final ElementTypes element;
     protected final int power;
     private boolean isend = false;
+    private boolean firstupdate = false;
     private Skill nextskill;
 
     public Skill(SkillOwner owner, ElementTypes element, int power) {
@@ -22,7 +23,6 @@ public abstract class Skill {
             isend = true;
             return;
         }
-        init(element, power);
     }
 
     public void replaceSkillOwner() {
@@ -71,6 +71,9 @@ public abstract class Skill {
                 CustomSkillPlugin.plugin.addSkill(nextskill);
             }
             return;
+        }
+        if(!firstupdate) {
+            init(element, power);
         }
         update();
     }
