@@ -18,7 +18,7 @@ public class SkillProjectile extends Skill {
         super(owner, element, power);
     }
 
-    public static double gravity = -0.5;
+    public static double gravity = -0.75;
     double dx;
     double dy;
     double dz;
