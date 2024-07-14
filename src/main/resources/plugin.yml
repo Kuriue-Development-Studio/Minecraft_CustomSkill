@@ -17,3 +17,5 @@ permissions:
 commands:
   skillmaker:
     permission: skilluser.admin
+  skillitem:
+    permission: skilluser.admin
