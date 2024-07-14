@@ -20,7 +20,7 @@ public class SkillShotGun extends Skill {
                 cloned.replaceSkillOwner();
                 Location loc = cloned.getOwner().getLocation();
                 loc.setYaw(loc.getYaw()+CustomSkillPlugin.r.nextFloat()*10f-5f);
-                loc.setPitch(loc.getYaw()+CustomSkillPlugin.r.nextFloat()*10f-5f);
+                loc.setPitch(loc.getPitch()+CustomSkillPlugin.r.nextFloat()*10f-5f);
                 CustomSkillPlugin.plugin.addSkill(cloned);
             }
         }
