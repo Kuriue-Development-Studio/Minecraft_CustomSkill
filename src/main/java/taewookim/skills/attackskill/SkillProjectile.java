@@ -62,7 +62,7 @@ public class SkillProjectile extends Skill {
     protected void update() {
         double lasttime = time;
         time+=0.05;
-        double vy = gravity*(time*time-lasttime*lasttime)+(time-lasttime)*dy;
+        double vy = gravity*(time*time-lasttime*lasttime)+dy;
         loc.add(dx, vy, dz);
         box.shift(dx, vy, dz);
         w.spawnParticle(element.getMainParticle(), loc, power, d, d, d, 0.05);
