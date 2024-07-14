@@ -74,6 +74,7 @@ public abstract class Skill {
         }
         if(!firstupdate) {
             init(element, power);
+            firstupdate=true;
         }
         update();
     }
