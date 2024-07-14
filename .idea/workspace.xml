@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="복사된 스킬이 그 다음 스킬도 복제하지 않았던 문제를 해결하였습니다.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" afterDir="false" />
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="각도 범위 증가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/cloneskill/SkillShotGun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/cloneskill/SkillShotGun.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +219,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720937598912</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="replaceSkillOwner가 nextskill에도 적용되지 않았던 문제를 해결하였습니다.">
+      <option name="closed" value="true" />
+      <created>1720938973353</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720938973353</updated>
+    </task>
+    <task id="LOCAL-00014" summary="샷건 각도 설정 잘못함">
+      <option name="closed" value="true" />
+      <created>1720939181335</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720939181335</updated>
+    </task>
+    <task id="LOCAL-00015" summary="각도 범위 증가">
+      <option name="closed" value="true" />
+      <created>1720939269386</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720939269386</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -234,6 +259,9 @@
     <MESSAGE value="무한으로 반복되는 버그가 수정되었습니다." />
     <MESSAGE value="복사된 엔티티가 자동으로 삭제되는 버그가 수정되었습니다." />
     <MESSAGE value="복사된 스킬이 그 다음 스킬도 복제하지 않았던 문제를 해결하였습니다." />
-    <option name="LAST_COMMIT_MESSAGE" value="복사된 스킬이 그 다음 스킬도 복제하지 않았던 문제를 해결하였습니다." />
+    <MESSAGE value="replaceSkillOwner가 nextskill에도 적용되지 않았던 문제를 해결하였습니다." />
+    <MESSAGE value="샷건 각도 설정 잘못함" />
+    <MESSAGE value="각도 범위 증가" />
+    <option name="LAST_COMMIT_MESSAGE" value="각도 범위 증가" />
   </component>
 </project>
