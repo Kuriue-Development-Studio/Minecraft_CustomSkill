@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="아이템을 &quot;드롭&quot;합니다.">
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="ItemStack으로 Skill을 빌드 할 수 있습니다.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720943524854</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="ItemStack으로 Skill을 빌드 할 수 있습니다.">
+      <option name="closed" value="true" />
+      <created>1720945313200</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1720945313200</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -298,6 +305,7 @@
     <MESSAGE value="SkillItemBuilder로 아이템을 제작할 수 있습니다." />
     <MESSAGE value="아이템에 색깔 추가" />
     <MESSAGE value="아이템을 &quot;드롭&quot;합니다." />
-    <option name="LAST_COMMIT_MESSAGE" value="아이템을 &quot;드롭&quot;합니다." />
+    <MESSAGE value="ItemStack으로 Skill을 빌드 할 수 있습니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="ItemStack으로 Skill을 빌드 할 수 있습니다." />
   </component>
 </project>
