@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="각도 범위 증가">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/cloneskill/SkillShotGun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/cloneskill/SkillShotGun.java" afterDir="false" />
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="범위 증가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/commands/SkillItemCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillItemBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/CustomSkillPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/CustomSkillPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720939269386</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="범위 증가">
+      <option name="closed" value="true" />
+      <created>1720939631115</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720939631115</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -262,6 +272,7 @@
     <MESSAGE value="replaceSkillOwner가 nextskill에도 적용되지 않았던 문제를 해결하였습니다." />
     <MESSAGE value="샷건 각도 설정 잘못함" />
     <MESSAGE value="각도 범위 증가" />
-    <option name="LAST_COMMIT_MESSAGE" value="각도 범위 증가" />
+    <MESSAGE value="범위 증가" />
+    <option name="LAST_COMMIT_MESSAGE" value="범위 증가" />
   </component>
 </project>

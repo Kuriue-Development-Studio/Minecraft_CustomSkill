@@ -39,7 +39,7 @@ public class SkillItemBuilder {
     public ItemStack build() {
         ItemStack i = new ItemStack(Material.BOOK);
         ItemMeta m = i.getItemMeta();
-        m.setDisplayName("미지의 스킬북");
+        m.setDisplayName("§a미지의 스킬북");
         PersistentDataContainer container = m.getPersistentDataContainer();
         int size = skills.size();
         if(size>10) {
