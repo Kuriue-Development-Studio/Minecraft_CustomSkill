@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="복사된 엔티티가 자동으로 삭제되는 버그가 수정되었습니다.">
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="복사된 스킬이 그 다음 스킬도 복제하지 않았던 문제를 해결하였습니다.">
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/cloneskill/SkillShotGun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/cloneskill/SkillShotGun.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720935736418</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="복사된 스킬이 그 다음 스킬도 복제하지 않았던 문제를 해결하였습니다.">
+      <option name="closed" value="true" />
+      <created>1720937598912</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720937598912</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -226,6 +233,7 @@
     <MESSAGE value="shotgun에서 객체가 복사되지 않았던 문제를 해결하였습니다." />
     <MESSAGE value="무한으로 반복되는 버그가 수정되었습니다." />
     <MESSAGE value="복사된 엔티티가 자동으로 삭제되는 버그가 수정되었습니다." />
-    <option name="LAST_COMMIT_MESSAGE" value="복사된 엔티티가 자동으로 삭제되는 버그가 수정되었습니다." />
+    <MESSAGE value="복사된 스킬이 그 다음 스킬도 복제하지 않았던 문제를 해결하였습니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="복사된 스킬이 그 다음 스킬도 복제하지 않았던 문제를 해결하였습니다." />
   </component>
 </project>

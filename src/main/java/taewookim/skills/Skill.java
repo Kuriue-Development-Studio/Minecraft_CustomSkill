@@ -24,8 +24,18 @@ public abstract class Skill {
         }
     }
 
+    public void replaceSkillOwner(SkillOwner owner) {
+        this.owner = owner;
+        if(nextskill!=null) {
+            nextskill.replaceSkillOwner(owner);
+        }
+    }
+
     public void replaceSkillOwner() {
-        owner=owner.clone();
+        owner = owner.clone();
+        if(nextskill!=null) {
+            nextskill.replaceSkillOwner(owner);
+        }
     }
 
     protected abstract void init(ElementTypes element, int power);
