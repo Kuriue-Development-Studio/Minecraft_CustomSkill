@@ -13,7 +13,7 @@ public abstract class Skill {
     protected final int power;
     private boolean isend = false;
     private boolean firstupdate = false;
-    private Skill nextskill;
+    private Skill nextskill = null;
 
     public Skill(SkillOwner owner, ElementTypes element, int power) {
         this.element = element;
@@ -47,8 +47,10 @@ public abstract class Skill {
     @Override
     public Skill clone() {
         try{
-            Skill skill = this.getClass().getDeclaredConstructor(SkillOwner.class, ElementTypes.class, int.class).newInstance(owner, element, power);
-            skill.setNextSkill(nextskill.clone());
+            Skill skill = this.getClass().getConstructor(SkillOwner.class, ElementTypes.class, int.class).newInstance(owner, element, power);
+            if(skill.nextskill!=null) {
+                skill.setNextSkill(nextskill.clone());
+            }
             return skill;
         }catch(Exception e) {
             return null;

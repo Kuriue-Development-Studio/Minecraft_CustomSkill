@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="큰일날뻔">
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="shotgun에서 객체가 복사되지 않았던 문제를 해결하였습니다.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/util/SkillOwner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +172,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720933807690</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ㄹㅇ 버그 고침">
+      <option name="closed" value="true" />
+      <created>1720934287823</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720934287823</updated>
+    </task>
+    <task id="LOCAL-00008" summary="location을 복사할때 null값인지 확인합니다.">
+      <option name="closed" value="true" />
+      <created>1720934455506</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720934455506</updated>
+    </task>
+    <task id="LOCAL-00009" summary="shotgun에서 객체가 복사되지 않았던 문제를 해결하였습니다.">
+      <option name="closed" value="true" />
+      <created>1720934661444</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720934661444</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,6 +206,9 @@
     <MESSAGE value="중력 강화" />
     <MESSAGE value="버그 수정" />
     <MESSAGE value="큰일날뻔" />
-    <option name="LAST_COMMIT_MESSAGE" value="큰일날뻔" />
+    <MESSAGE value="ㄹㅇ 버그 고침" />
+    <MESSAGE value="location을 복사할때 null값인지 확인합니다." />
+    <MESSAGE value="shotgun에서 객체가 복사되지 않았던 문제를 해결하였습니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="shotgun에서 객체가 복사되지 않았던 문제를 해결하였습니다." />
   </component>
 </project>

@@ -109,10 +109,13 @@ public class SkillOwner {
     @Override
     public SkillOwner clone() {
         SkillOwner skillowner = new SkillOwner();
+        skillowner.target = this.target;
         skillowner.owner = this.owner;
         skillowner.loc = this.loc!=null?this.loc.clone():null;
+        skillowner.istarget = this.istarget;
         skillowner.isowner = this.isowner;
         skillowner.islocation = this.islocation;
+        skillowner.canclone = this.canclone;
         return skillowner;
     }
 }
