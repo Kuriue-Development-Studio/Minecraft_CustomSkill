@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="중력 강화">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="605ebd50-731f-46ef-a330-043964573d68" name="Changes" comment="큰일날뻔">
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillProjectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/skills/attackskill/SkillProjectile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720931345755</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="버그 수정">
+      <option name="closed" value="true" />
+      <created>1720933668615</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720933668615</updated>
+    </task>
+    <task id="LOCAL-00006" summary="큰일날뻔">
+      <option name="closed" value="true" />
+      <created>1720933807690</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720933807690</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -164,6 +178,8 @@
     <MESSAGE value="기초적인것" />
     <MESSAGE value="update" />
     <MESSAGE value="중력 강화" />
-    <option name="LAST_COMMIT_MESSAGE" value="중력 강화" />
+    <MESSAGE value="버그 수정" />
+    <MESSAGE value="큰일날뻔" />
+    <option name="LAST_COMMIT_MESSAGE" value="큰일날뻔" />
   </component>
 </project>

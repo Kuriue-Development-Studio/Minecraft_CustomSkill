@@ -110,7 +110,7 @@ public class SkillOwner {
     public SkillOwner clone() {
         SkillOwner skillowner = new SkillOwner();
         skillowner.owner = this.owner;
-        skillowner.loc = this.loc.clone();
+        skillowner.loc = this.loc!=null?this.loc.clone():null;
         skillowner.isowner = this.isowner;
         skillowner.islocation = this.islocation;
         return skillowner;
