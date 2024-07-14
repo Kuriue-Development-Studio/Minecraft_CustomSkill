@@ -42,7 +42,7 @@ public class SkillItemCommand implements CommandExecutor, TabCompleter {
             builder.addSkill(SkillTypes.valueOf(values[0]), ElementTypes.valueOf(values[1]), Integer.parseInt(values[2]));
         }
         if(commandSender instanceof Player p) {
-            p.getInventory().addItem(builder.build());
+            p.getWorld().dropItem(p.getLocation(), builder.build());
         }
         return false;
     }
