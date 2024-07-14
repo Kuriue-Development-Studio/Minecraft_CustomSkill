@@ -21,7 +21,6 @@ public abstract class Skill {
         this.owner = owner;
         if(!owner.isLocation()) {
             isend = true;
-            return;
         }
     }
 
@@ -65,16 +64,16 @@ public abstract class Skill {
         if(isend) {
             return;
         }
+        if(!firstupdate) {
+            init(element, power);
+            firstupdate=true;
+        }
         if(tick<1) {
             isend = true;
             if(nextskill!=null) {
                 CustomSkillPlugin.plugin.addSkill(nextskill);
             }
             return;
-        }
-        if(!firstupdate) {
-            init(element, power);
-            firstupdate=true;
         }
         update();
     }
